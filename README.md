@@ -1,5 +1,9 @@
 # sdl2-cairo-image
 
+[![Build Status](https://api.travis-ci.org/jaiyalas/sdl2-cairo-image.png?branch=stable)](http://travis-ci.org/jaiyalas/sdl2-cairo-image)
+[![MIT](http://b.repl.ca/v1/license-MIT-blue.png)](https://en.wikipedia.org/wiki/MIT_licenses)
+[![Haskell](http://b.repl.ca/v1/language-haskell-orange.png)](http://haskell.org)
+
 An image loading and rendering library for sdl2 / sdl2-cairo
 
 ## Installation
