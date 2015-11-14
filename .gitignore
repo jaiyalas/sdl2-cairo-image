@@ -1,4 +1,5 @@
 dist
+img
 cabal-dev
 *.o
 *.hi
