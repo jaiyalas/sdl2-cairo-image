@@ -22,8 +22,8 @@ import Data.Word (Word8(..))
 import qualified Data.Vector.Storable as VecS
 import qualified Data.Vector as Vec
 --
-import qualified SDL.Cairo.Image.Loader as L
-import qualified SDL.Cairo.Image.Renderer as R
+import qualified SDL.Cairo.Image.Load as L
+import qualified SDL.Cairo.Image.Render as R
 --
 main :: IO ()
 main = do

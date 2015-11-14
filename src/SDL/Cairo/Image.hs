@@ -8,9 +8,9 @@ This module is provided as a convenience to import the most
 important parts of the API all at once.
 -}
 module SDL.Cairo.Image
-   ( module SDL.Cairo.Image.Renderer
-   , module SDL.Cairo.Image.Loader
+   ( module SDL.Cairo.Image.Render
+   , module SDL.Cairo.Image.Load
    ) where
 
-import SDL.Cairo.Image.Renderer
-import SDL.Cairo.Image.Loader
+import SDL.Cairo.Image.Render
+import SDL.Cairo.Image.Load

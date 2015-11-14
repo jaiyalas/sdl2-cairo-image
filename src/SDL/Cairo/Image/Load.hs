@@ -13,7 +13,7 @@ So far, supports only format PNG (Portable Network Graphics) and
 two kinds of pixel format 'PixelRGB8' and 'PixelRGBA8'.
 -}
 --------------------------------------------------------------------
-module SDL.Cairo.Image.Loader
+module SDL.Cairo.Image.Load
    (
    -- * Image loading
      loadPNGRGB
@@ -64,7 +64,7 @@ defImageRGBA8 :: Image PixelRGBA8
 defImageRGBA8 = Image
    { imageWidth = 5
    , imageHeight = 5
-   , imageData = VecS.fromList 
+   , imageData = VecS.fromList
       [ 255,0,0,255,  0,0,0,255,   0,0,0,255,   0,0,0,255,   255,0,0,255
       , 0,0,0,255,    255,0,0,255, 0,0,0,255,   255,0,0,255, 0,0,0,255
       , 0,0,0,255,    0,0,0,255,   255,0,0,255, 0,0,0,255,   0,0,0,255

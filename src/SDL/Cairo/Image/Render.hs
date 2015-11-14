@@ -62,7 +62,7 @@ Assume we alread have following code,
 
 
 -}
-module SDL.Cairo.Image.Renderer
+module SDL.Cairo.Image.Render
    (
    -- * draw 'Image' in 'IO' ()
      drawImg
