@@ -5,25 +5,14 @@ import qualified SDL
 import SDL.Cairo (createCairoTexture)
 import SDL.Cairo.Canvas
 --
-import qualified Graphics.Rendering.Cairo as Ca
---
 import Linear.V2 (V2(..))
-import Linear.V4 (V4(..))
 --
 import Data.Maybe (catMaybes)
 import Control.Concurrent (threadDelay)
 import Control.Monad (unless,void,mapM)
 import Control.Monad.Fix (fix)
 --
-import Codec.Picture
--- import Codec.Picture.Png
---
-import Data.Word (Word8(..))
-import qualified Data.Vector.Storable as VecS
-import qualified Data.Vector as Vec
---
-import qualified SDL.Cairo.Image.Load as L
-import qualified SDL.Cairo.Image.Render as R
+import qualified SDL.Cairo.Image as I
 --
 main :: IO ()
 main = do
@@ -33,16 +22,19 @@ main = do
    renderer <- SDL.createRenderer window (-1) rdrConfig
    texture  <- createCairoTexture renderer (V2 640 480)
    --
-
-   img <- L.loadPNGRGBA "/Users/jaiyalas/img/xdd.png"
+   -- img1 <- L.loadPNGRGBA "/Users/jaiyalas/img/xd.png"
+   -- img2 <- L.loadPNGRGBA "/Users/jaiyalas/img/char.png"
+   img3 <- I.loadRGBA8 I.PNG "./img/newton.png"
+   img4 <- I.loadRGB8 I.PNG "./img/newton.png"
    --
    fix $ \loop -> do
          threadDelay 100000
          withCanvas texture $ do
             background $ gray 102
-            R.renderImgCanvas (V2 50 50) img
-         R.drawImg  texture (V2 150 150) img
-         R.drawImgC texture (V2 220 220) img
+            I.renderImgCanvas (V2 10  50) img3
+            I.renderImgCanvas (V2 10 200) img4
+         -- R.drawImg  texture   (V2 50 120) img3
+         -- R.drawImgC texture   (V2 50 220) img3
          SDL.copy renderer texture Nothing Nothing
          SDL.present renderer
          qb <- quitPredicate

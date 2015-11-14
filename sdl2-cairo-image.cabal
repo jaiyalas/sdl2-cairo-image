@@ -1,7 +1,7 @@
 Name:                   sdl2-cairo-image
 Synopsis:               An image loading and rendering library for sdl2 / sdl2-cairo
 Description:            An image loading and rendering library for sdl2 / sdl2-cairo
-Version:                0.0.0.1
+Version:                1.0
 Author:                 Yun-Yan Chi <jaiyalas@gmail.com>
 Maintainer:             Yun-Yan Chi <jaiyalas@gmail.com>
 License:                MIT
@@ -35,7 +35,7 @@ executable main
   default-language: Haskell2010
   hs-source-dirs:   src
   main-is:          Main.hs
-  ghc-options:      -w -threaded -O2
+  ghc-options:      -w -threaded
   Build-Depends:        base           >= 4 && < 5
                       , vector         >= 0.11
                       , linear         >= 1.19
