@@ -1,9 +1,9 @@
 Name:                   sdl2-cairo-image
 Synopsis:               An image loading and rendering library for sdl2 / sdl2-cairo
 Description:            An image loading and rendering library for sdl2 / sdl2-cairo
-Version:                1.0.0.1
-Author:                 Yun-Yan Chi <jaiyalas@gmail.com>
-Maintainer:             Yun-Yan Chi <jaiyalas@gmail.com>
+Version:                1.0.0.2
+Author:                 Yun-Yan Chi
+Maintainer:             jaiyalas@gmail.com
 License:                MIT
 License-File:           LICENSE
 Cabal-Version:          >= 1.10
